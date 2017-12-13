@@ -77,12 +77,12 @@ extension UITableViewCell {
             }
         }
         
-        guard let corner = checkCellIndexPath(indexPath: indexPath) else {return}
+        let corner = checkCellIndexPath(indexPath: indexPath)
         let contentBounds = CGRect(origin: CGPoint.zero, size: frame.size)
         let layer = CAShapeLayer()
         layer.bounds = contentBounds
         layer.position = CGPoint(x: contentBounds.midX ,y: contentBounds.midY)
-        layer.path = UIBezierPath(roundedRect: contentBounds, byRoundingCorners: corner, cornerRadii: CGSize(width: radio, height: radio)).cgPath
+        layer.path = UIBezierPath(roundedRect: contentBounds, byRoundingCorners: corner ?? [], cornerRadii: CGSize(width: radio, height: radio)).cgPath
         
         self.layer.mask = layer
     }
