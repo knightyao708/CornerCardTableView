@@ -1,6 +1,6 @@
 # CornerCardTableView
 效果图：
-![](http://upload-images.jianshu.io/upload_images/1467685-139eee2354ba0901.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/1467685-139eee2354ba0901.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 核心代码：
 ```
